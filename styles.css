@@ -1,0 +1,97 @@
+main {
+    max-width: 840px;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0 auto;
+    position: relative;
+    background: rgba(0, 0, 0, .05);
+    padding-top: 64px;
+}
+
+#side-nav,
+#main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 840px;
+}
+
+#main-nav {
+    width: 100vw;
+    z-index: 99;
+}
+
+#right-nav a {
+    font-size: 2em;
+}
+
+#open-nav,
+#close-nav {
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100vh;
+    width: 0;
+    z-index: 999;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    padding: 0 25px;
+    color: #FFFFFF;
+    z-index: 9;
+}
+
+.sidenav form {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.sidenav .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#main {
+    padding: 20px 0;
+}
+
+@media screen and (min-width: 841px) {
+    #side-nav,
+    #main-nav {
+        right: calc((100vw - 840px) / 2);
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 20px;
+    }
+}
