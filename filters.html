@@ -5,6 +5,7 @@
     <title>Play Bow Wow</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/bootstrap-4.4.1/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-slider.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
@@ -51,7 +52,7 @@
                         <form>
                             <div class="row">
                                 <div class="col-sm-12 mb-3">
-                                    <label for="country">Gender:</label>
+                                    <label class="font-weight-bold">Gender:</label>
                                     <div class="d-flex">
                                         <div class="custom-control custom-checkbox mr-3">
                                             <input type="checkbox" class="custom-control-input" id="male">
@@ -66,8 +67,16 @@
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 mb-3">
-                                    <label for="country">Breed:</label>
-                                    <select class="custom-select" size="3" multiple>
+                                    <label class="mb-4 font-weight-bold" for="age">Age:</label>
+                                    <div class="custom-bootstrap-slider">
+                                        <input class="span2" id="age" type="text" data-slider-min="1" data-slider-max="30" data-slider-step="1" data-slider-value="[1,30]"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 mb-3">
+                                    <label for="breed" class="font-weight-bold">Breed:</label>
+                                    <select id="breed" class="custom-select" size="3" multiple>
                                         <option selected>Select</option>
                                         <option value="1">Beagle</option>
                                         <option value="2">Bulldog</option>
@@ -80,8 +89,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-sm-12 mb-3">
-                                    <label for="country">Size:</label>
-                                    <select class="custom-select" size="3" multiple>
+                                    <label for="size" class="font-weight-bold">Size:</label>
+                                    <select id="size" class="custom-select" size="3" multiple>
                                         <option selected>Select</option>
                                         <option value="1">Toy</option>
                                         <option value="2">Small</option>
@@ -91,11 +100,19 @@
                                     </select>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-sm-12 mb-4">
+                                    <label class="mb-4 font-weight-bold" for="distance">Distance (in miles):</label>
+                                    <div class="custom-bootstrap-slider">
+                                        <input class="span2" id="distance" type="text" data-slider-min="1" data-slider-max="100" data-slider-step="1" data-slider-value="[1,100]"/>
+                                    </div>
+                                </div>
+                            </div>
                             <button class="btn btn-primary btn-lg btn-block" type="submit">Search</button>
                         </form>
                     </div>
                 </div>
-                <footer class="my-5 pt-5 text-muted text-center text-small">
+                <footer class="mt-5 text-muted text-center text-small">
                     <p class="mb-1">© 2020 Play Bow Wow</p>
                     <ul class="list-inline">
                         <li class="list-inline-item"><a href="#">Privacy</a></li>
@@ -108,6 +125,7 @@
     </main>
     <script src="assets/jquery-3.5.1.min.js"></script>
     <script src="assets/bootstrap-4.4.1/bootstrap.min.js"></script>
+    <script src="assets/bootstrap-slider.min.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
 </body>
 

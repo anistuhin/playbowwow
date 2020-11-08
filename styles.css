@@ -19,7 +19,8 @@ main {
 
 #main-nav {
     width: 100vw;
-    z-index: 99;
+    z-index: 9999;
+    border-bottom: 1px solid #ced4da;
 }
 
 #right-nav a {
@@ -34,7 +35,7 @@ main {
 .sidenav {
     height: 100vh;
     width: 0;
-    z-index: 999;
+    z-index: 99999;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
@@ -76,10 +77,37 @@ main {
 }
 
 #main {
-    padding: 20px 0;
+    padding: 20px 0 0;
+}
+
+
+.custom-bootstrap-slider {
+    padding: 10px;
+}
+
+.custom-bootstrap-slider .slider {
+    width: 100% !important;
+}
+
+.custom-bootstrap-slider .slider-selection {
+    background-color: #FFF !important;
+    box-shadow: none !important;
+    border: 1px solid #ced4da;
+}
+
+.custom-bootstrap-slider .slider-handle,
+.custom-bootstrap-slider .tooltip-inner {
+    background-image: none !important;
+    background-color: #007bff !important;
+}
+
+.custom-bootstrap-slider .bs-tooltip-auto[x-placement^="top"] .arrow::before,
+.custom-bootstrap-slider .bs-tooltip-top .arrow::before {
+    border-top-color: #007bff !important;
 }
 
 @media screen and (min-width: 841px) {
+
     #side-nav,
     #main-nav {
         right: calc((100vw - 840px) / 2);
