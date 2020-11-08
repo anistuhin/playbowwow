@@ -12,14 +12,14 @@
     <main>
         <nav id="side-nav" class="sidenav bg-primary">
             <span id="close-nav" class="closebtn">&times;</span>
-            <a href="index.html">Home</a>
-            <a href="profile.html">Profile</a>
-            <a href="inbox.html">Inbox</a>
+            <a href="index.htm">Home</a>
+            <a href="profile.htm">Profile</a>
+            <a href="inbox.htm">Inbox</a>
             <a href="inbox-details.html">Inbox</a>
-            <a href="filters.html">Search using filters</a>
-            <a href="search-results.html">Search results</a>
-            <a href="details.html">Details</a>
-            <a href="scheduler.html">Scheduler</a>
+            <a href="filters.htm">Search using filters</a>
+            <a href="search-results.htm">Search results</a>
+            <a href="details.htm">Details</a>
+            <a href="scheduler.htm">Scheduler</a>
             <form class="form-inline bg-primary w-100">
                 <input class="form-control w-100 text-light bg-primary" type="search" placeholder="Search by name" aria-label="Search">
             </form>
@@ -48,7 +48,51 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <!-- write your codes here -->
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-5 mb-3">
+                                    <label for="country">Gender:</label>
+                                    <div class="d-flex">
+                                        <div class="custom-control custom-checkbox mr-3">
+                                            <input type="checkbox" class="custom-control-input" id="male">
+                                            <label class="custom-control-label" for="male">male</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="female">
+                                            <label class="custom-control-label" for="female">female</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-5 mb-3">
+                                    <label for="country">Breed:</label>
+                                    <select class="custom-select" size="3" multiple>
+                                        <option selected>Select</option>
+                                        <option value="1">Beagle</option>
+                                        <option value="2">Bulldog</option>
+                                        <option value="3">German Shepherd</option>
+                                        <option value="4">Golden Retriever</option>
+                                        <option value="5">Shih Tzu</option>
+                                        <option value="6">Siberian Husky</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-5 mb-3">
+                                    <label for="country">Size:</label>
+                                    <select class="custom-select" size="3" multiple>
+                                        <option selected>Select</option>
+                                        <option value="1">Toy</option>
+                                        <option value="2">Small</option>
+                                        <option value="3">Medium</option>
+                                        <option value="4">Large</option>
+                                        <option value="5">Extra Large</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-lg btn-block" type="submit">Search</button>
+                        </form>
                     </div>
                 </div>
                 <footer class="my-5 pt-5 text-muted text-center text-small">
