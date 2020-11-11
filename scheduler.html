@@ -4,7 +4,9 @@
 <head>
     <title>Play Bow Wow</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="assets/bootstrap-4.4.1/bootstrap.min.css">
+    <link rel="stylesheet" href="datepicker.css" />
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
@@ -48,21 +50,26 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12">
-                        <!-- write your codes here -->
+                        <div id="datetimepicker"></div>
                     </div>
                 </div>
-                <footer class="mt-5 text-muted text-center text-small">
-                    <p class="mb-1">© 2020 Play Bow Wow</p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#">Privacy</a></li>
-                        <li class="list-inline-item"><a href="#">Terms</a></li>
-                        <li class="list-inline-item"><a href="#">How to tour</a></li>
-                    </ul>
-                </footer>
             </div>
+            <ul class="list-inline text-center">
+                <li class="list-inline-item"><a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Submit</a></li>
+                <li class="list-inline-item"><a href="#" class="btn btn-outline-secondary btn-lg" role="button" aria-pressed="true">Skip</a></li>
+            </ul>  
+            <footer class="mt-5 text-muted text-center text-small">
+                <p class="mb-1">© 2020 Play Bow Wow</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Privacy</a></li>
+                    <li class="list-inline-item"><a href="#">Terms</a></li>
+                    <li class="list-inline-item"><a href="#">How to tour</a></li>
+                </ul>
+            </footer>
         </div>
     </main>
     <script src="assets/jquery-3.5.1.min.js"></script>
+    <script src="assets/jquery-ui/jquery-ui.min.js"></script>
     <script src="assets/bootstrap-4.4.1/bootstrap.min.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
 </body>
