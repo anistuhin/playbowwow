@@ -15,20 +15,16 @@
             <a href="index.html">Home</a>
             <a href="profile.html">Profile</a>
             <a href="inbox.html">Inbox</a>
-            <a href="inbox-details.html">Inbox details</a>
             <a href="filters.html">Search using filters</a>
-            <a href="search-results.html">Search results</a>
-            <a href="details.html">Details</a>
-            <a href="scheduler.html">Scheduler</a>
             <form class="form-inline bg-primary w-100">
                 <input class="form-control w-100 text-light bg-primary" type="search" placeholder="Search by name" aria-label="Search">
             </form>
         </nav>
         <nav id="main-nav" class="navbar navbar-light bg-light justify-content-between">
-            <a class="navbar-brand" href="index.html">Logo</a>
+            <a class="navbar-brand" href="index.html">Play Bow Wow</a>
             <ul id="right-nav" class="navbar-nav flex-row justify-content-end">
                 <li class="nav-item ml-3">
-                    <a href="notifications.htm">
+                    <a href="notifications.html">
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bell align-baseline" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z" />
                             <path fill-rule="evenodd" d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
@@ -48,56 +44,42 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12">
-                        <!-- write your codes here -->
-                        <div class = "row">
-                            <div class = "col-sm-5">
-                                     <!-- Image of a Dog -->
-                                     <img src = "GoldenRetriever.jpg" alt = "Retreiver" class = "img-thumbnail"> 
-                                     <a href="#" class="text-decoration-none">&nbsp;Full Gallery</a>
-                                     <!-- Profile Description -->
-                                    <p></p> Hi, I am Ted. <br> This is my good friend here, Zep. Zep is a very friendly and happy dog. He loves making new friends and playing with them.
-                                       His favorite places are the dog park and the water.<br> <br> Send us a match request if you want to hang out and play with us. If you would like to know
-                                        more about us drop us a message. <br><br> And...Zep says "Bow wow wow" to you. </p>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <img src="GoldenRetriever.jpg" alt="Retreiver" class="img-thumbnail">
+                                <a href="#" class="text-decoration-none">&nbsp;Full Gallery</a>
+                                <p></p> Hi, I am Ted. <br> This is my good friend here, Zep. Zep is a very friendly and happy dog. He loves making new friends and playing with them.
+                                His favorite places are the dog park and the water.<br> <br> Send us a match request if you want to hang out and play with us. If you would like to know
+                                more about us drop us a message. <br><br> And...Zep says "Bow wow wow" to you. </p>
                             </div>
-                            <div class = "col-sm-7">
-                                   <!-- Profile Heading -->
-                                    <h1><b> Zep </b></h1>
-                                     <h2>2.5 years, Male, Medium<br> Golden Retriever <br> 0.5 miles </h2>
-
-                                    <!-- Modal for vaccaniation button-->
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                          Vaccination Report
-                                   </button>
-                          
-                                  <!-- Modal -->
-                                 <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                                 <div class="modal-content">
-                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Vaccine Report for Zep</h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                              </div>
-                                <div class="modal-body">
-                                  <img src = "vaccine.jpg" height = 450px width = 450px>
-                                  <!--add prototype vaccine-->
+                            <div class="col-sm-7">
+                                <h1><b> Zep </b></h1>
+                                <h2>2.5 years, Male, Medium<br> Golden Retriever <br> 0.5 miles </h2>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                    Vaccination Report
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Vaccine Report for Zep</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="vaccine.jpg" height="450px" width="450px">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                  <!--<button type="button" class="btn btn-primary">Save changes</button>-->
-                                </div>
-                              </div>
+                                <input type="image" src="dogtail.jpg" alt="dogtail" width="75" height="75">
                             </div>
                         </div>
-
-                         <!-- Dog Tail Button -->
-                         <input type = "image" src= "dogtail.jpg" alt = "dogtail" width = "75" height ="75">
-                            </div>
-
-                        </div>
-
-
                     </div>
                 </div>
                 <footer class="mt-5 text-muted text-center text-small">
