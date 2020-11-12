@@ -1,6 +1,6 @@
 (function($) {
     $(document).ready(function() {
-        if($("#age").length && $("#distance").length){ 
+        if ($("#age").length && $("#distance").length) {
             $("#age").slider({ 'tooltip': 'always' });
             $("#distance").slider({ 'tooltip': 'always' });
         }

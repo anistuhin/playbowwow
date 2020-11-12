@@ -130,6 +130,14 @@ footer {
     margin-bottom: 70px;
 }
 
+#datetimepicker .ui-datepicker {
+    margin: 0 auto
+}
+
+.modal {
+    z-index: 99999;
+}
+
 @media screen and (min-width: 841px) {
 
     #side-nav,
