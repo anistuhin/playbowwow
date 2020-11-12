@@ -62,8 +62,34 @@
                 </div>
             </div>
             <ul class="list-inline text-center mt-4">
-                <li class="list-inline-item"><a href="#" class="btn btn-primary" role="button" aria-pressed="true">Submit</a></li>
-                <li class="list-inline-item"><a href="#" class="btn btn-secondary" role="button" aria-pressed="true">Skip</a></li>
+               
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                            Submit
+                </button>
+
+                <!-- Modal -->
+               <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+              <div class="modal-content">
+              <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel"> Congrats! </h5>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+             </div>
+         <div class="modal-body">
+            A playdate request has been sent sucessfully. 
+
+        </div>
+      <div class="modal-footer">
+        <li class="list-inline-item"><a href="inbox-details.html" class="btn btn-primary" role="button" aria-pressed="true">Start Chatting</a></li>
+       
+      </div>
+    </div>
+  </div>
+</div>
+                <li class="list-inline-item"><a href="inbox.html" class="btn btn-secondary" role="button" aria-pressed="true">Skip</a></li>
             </ul>
             <footer class="mt-5 text-muted text-center text-small">
                 <p class="mb-1">© 2020 Play Bow Wow</p>
