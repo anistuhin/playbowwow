@@ -106,6 +106,26 @@ main {
     border-top-color: #007bff !important;
 }
 
+.notifications {
+    position: relative;
+}
+
+.notifications-badge {
+    position: absolute;
+    top: -1px;
+    left: 17px;
+    z-index: 99;
+    color: #fff;
+    background-color: #6c757d;
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 26px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
 @media screen and (min-width: 841px) {
 
     #side-nav,
@@ -123,6 +143,7 @@ main {
         font-size: 20px;
     }
 }
+
 .wrap {
     margin-left: 5%
 }
