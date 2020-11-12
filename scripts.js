@@ -9,28 +9,20 @@
         }
         if (true) {
             var places = [
-                "ActionScript",
-                "AppleScript",
-                "Asp",
-                "BASIC",
-                "C",
-                "C++",
-                "Clojure",
-                "COBOL",
-                "ColdFusion",
-                "Erlang",
-                "Fortran",
-                "Groovy",
-                "Haskell",
-                "Java",
-                "JavaScript",
-                "Lisp",
-                "Perl",
-                "PHP",
-                "Python",
-                "Ruby",
-                "Scala",
-                "Scheme"
+                "16th Street Dog Park",
+                "Fred Anderson Dog Park",
+                "Grant Park",
+                "Humboldt Park",
+                "Lake Shore East Dog Park",
+                "Larrabee Dog Park",
+                "Lincoln Park",
+                "Logan Square Dog Park",
+                "Millennium Park",
+                "McKinley Dog Park",
+                "Montrose Dog Park",
+                "River Park",
+                "University Village Dog Park",
+                "Wicker Dog Park"
             ];
             $("#places").autocomplete({
                 source: places
