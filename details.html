@@ -53,7 +53,28 @@
                             <div class="col-sm-5">
                                 <img src="assets/img/gr.jpg" alt="Retreiver" class="img-thumbnail">
                                 <div class="mt-2 mb-4">
-                                    <a href="#" class="text-decoration-none">View album</a>
+                                    <button type = "button" class = "btn btn-primary" data-toggle="modal" data-target = "#galleryModal">
+                                        View Full Gallery
+                                    </button>
+                                    <div class="modal" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="galleryModalLabel">Modal title</h5>
+                                              <button type="button" class="close" data-dismiss="modal1" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                              Full Gallery would be shown here. To be implemented in GR5.
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                              <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                 </div>
                             </div>
                             <div class="col-sm-7">
