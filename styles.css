@@ -163,8 +163,10 @@ footer {
 @media screen and (min-width: 841px) {
 
     #side-nav,
-    #main-nav {
-        right: calc((100vw - 840px) / 2);
+    #main-nav,
+    .msg-bottom {
+        right: calc((100vw - 840px) / 2) !important;
+        left: auto !important;
     }
 
     .dogtail {
@@ -276,7 +278,6 @@ footer {
 .input-group {
     float: right;
     padding: 11px;
-    border-radius: 20px;
     background-color: #fff;
 }
 
