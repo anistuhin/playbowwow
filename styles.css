@@ -131,7 +131,29 @@ footer {
 }
 
 #datetimepicker .ui-datepicker {
-    margin: 0 auto
+    margin: 0 auto;
+    width: 100%;
+}
+
+#datetimepicker .ui-state-highlight,
+#datetimepicker .ui-widget-content .ui-state-highlight,
+#datetimepicker .ui-widget-header .ui-state-highlight {
+    border: 1px solid #007bff;
+    background: #649bd5;
+    color: #fff;
+}
+
+.dogtail {
+    border-radius: 50%;
+    border: 5px solid #964921;
+    width: 85px;
+    height: 85px;
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    z-index: 99;
 }
 
 .modal {
@@ -144,6 +166,11 @@ footer {
     #main-nav {
         right: calc((100vw - 840px) / 2);
     }
+
+    .dogtail {
+        right: calc(((100vw - 840px) / 2) + 20px);
+    }
+
 }
 
 @media screen and (max-height: 450px) {
@@ -282,4 +309,5 @@ footer {
     box-shadow: none !important;
     border-radius: 40px !important;
 }
+
 /*wintom*/
