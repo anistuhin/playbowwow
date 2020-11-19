@@ -29,6 +29,8 @@
             });
         }
     });
+
+    
     $(document).on('click', '#open-nav', function(e) {
         e.preventDefault();
         $('.sidenav').css('width', '320px')
@@ -37,3 +39,8 @@
         $('.sidenav').css('width', '')
     });
 })(window.jQuery);
+
+/*// MDB Lightbox Init
+        $(function () {
+        $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+        });  */
