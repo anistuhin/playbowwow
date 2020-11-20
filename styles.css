@@ -5,8 +5,51 @@ main {
     overflow-x: hidden;
     margin: 0 auto;
     position: relative;
-    background: rgba(0, 0, 0, .05);
+    background: rgba(0, 0, 0, .01);
     padding-top: 64px;
+    color: #965e37;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+a,
+.text-primary {
+    color: #965e37 !important;
+}
+
+.text-muted {
+    color: rgba(150, 94, 55, .75) !important;
+}
+
+.btn:not(a),
+.btn-secondary {
+    color: #fff !important;
+}
+
+.btn.focus,
+.btn:focus,
+.custom-select:focus,
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: 0 0 0 .2rem rgba(150, 94, 55, .25) !important;
+}
+
+.custom-select:focus,
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    border-color: #965e37 !important;
+}
+
+.btn-primary {
+    color: #fff !important;
+    background-color: rgba(150, 94, 55, .95) !important;
+    border-color: rgba(150, 94, 55, .95) !important;
+}
+
+.btn-primary:hover,
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: #965e37 !important;
+    border-color: #965e37 !important;
 }
 
 #side-nav,
@@ -98,12 +141,12 @@ main {
 .custom-bootstrap-slider .slider-handle,
 .custom-bootstrap-slider .tooltip-inner {
     background-image: none !important;
-    background-color: #007bff !important;
+    background-color: #965e37 !important;
 }
 
 .custom-bootstrap-slider .bs-tooltip-auto[x-placement^="top"] .arrow::before,
 .custom-bootstrap-slider .bs-tooltip-top .arrow::before {
-    border-top-color: #007bff !important;
+    border-top-color: #965e37 !important;
 }
 
 .notifications {
@@ -138,9 +181,29 @@ footer {
 #datetimepicker .ui-state-highlight,
 #datetimepicker .ui-widget-content .ui-state-highlight,
 #datetimepicker .ui-widget-header .ui-state-highlight {
-    border: 1px solid #007bff;
-    background: #649bd5;
-    color: #fff;
+    border: 1px solid #965e37;
+    background: rgba(150, 94, 55, .5);
+    color: #fff !important;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active {
+    background: rgb(150, 94, 55) !important;
+    border-color: rgb(150, 94, 55) !important;
+    color: #fff !important;
+}
+
+#places,
+.ui-widget-header,
+.ui-datepicker-calendar>thead {
+    color: rgb(150, 94, 55) !important;
+}
+
+#places {
+    border-color: rgb(150, 94, 55) !important;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
 }
 
 .dogtail {
@@ -244,7 +307,7 @@ footer {
 }
 
 .outgoing-chats-msg p {
-    background: #007bff;
+    background: #965e37;
     color: #fff;
     border-radius: 10px;
     font-size: 17px;
@@ -272,7 +335,7 @@ footer {
 .msg-bottom {
     position: relative;
     height: 10%;
-    background-color: #007bff;
+    background-color: #965e37;
 }
 
 .input-group {
@@ -288,7 +351,7 @@ footer {
 }
 
 .input-group.fa {
-    color: #007bff;
+    color: #965e37;
     float: right;
 }
 

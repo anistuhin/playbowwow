@@ -51,44 +51,37 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h5 class="mb-4 mt-4">Set a playdate:</h5>
+                        <h5 class="mb-4 mt-4"><b>Set a playdate:</b> Choose a date you're open to set a playdate.</h5>
                         <div id="datetimepicker"></div>
-                        <p class="mt-2">Choose a date you're open to set a playdate.</p>
-                        <div class="ui-widget">
-                            <label for="tags"><b>Place:</b></label>
+                        <div class="ui-widget mt-4">
+                            <label for="tags"><b>Place (optional):</b></label>
                             <input id="places" class="w-100">
                         </div>
                     </div>
                 </div>
             </div>
             <ul class="list-inline text-center mt-4">
-               
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-                            Submit
-                </button>
-
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">Submit</button>
                 <!-- Modal -->
-               <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog">
-              <div class="modal-content">
-              <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel"> Congrats! </h5>
-             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-             </div>
-         <div class="modal-body">
-            A playdate request has been sent sucessfully. 
-
-        </div>
-      <div class="modal-footer">
-        <li class="list-inline-item"><a href="inbox-details.html" class="btn btn-primary" role="button" aria-pressed="true">Start Chatting</a></li>
-       
-      </div>
-    </div>
-  </div>
-</div>
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Congrats!</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                A playdate request has been sent sucessfully.
+                            </div>
+                            <div class="modal-footer">
+                                <li class="list-inline-item"><a href="inbox-details.html" class="btn btn-primary" role="button" aria-pressed="true">Start Chatting</a></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <li class="list-inline-item"><a href="inbox.html" class="btn btn-secondary" role="button" aria-pressed="true">Skip</a></li>
             </ul>
             <footer class="mt-5 text-muted text-center text-small">

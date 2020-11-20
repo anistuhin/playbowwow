@@ -5,9 +5,12 @@
             $("#distance").slider({ 'tooltip': 'always' });
         }
         if ($('#datetimepicker').length) {
-            $("#datetimepicker").datepicker();
+            var dateToday = new Date();
+            $("#datetimepicker").datepicker({
+                minDate: dateToday
+            });
         }
-        if (true) {
+        if ($("#places").length) {
             var places = [
                 "16th Street Dog Park",
                 "Fred Anderson Dog Park",
