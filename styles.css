@@ -1,21 +1,47 @@
 main {
     max-width: 840px;
     width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
+    min-height: 100vh;
+    border-left: 1px solid #ced4da;
+    border-right: 1px solid #ced4da;
     margin: 0 auto;
     position: relative;
-    background: rgba(0, 0, 0, .01);
+    background: rgba(0, 0, 0, .05);
     padding-top: 125px;
     color: #965e37;
 }
 
-.home-page .card-body>h4 {
+.home-page .card-body>h4,
+.results-page .card-body>h4 {
     font-weight: bold;
 }
 
-footer a {
-    text-decoration: underline;
+.inbox-page a h5,
+.inbox-page a:hover h5 {
+    font-weight: bold;
+    color: #965e37 !important;
+}
+
+.inbox-page a:hover h5 {
+    text-decoration: underline !important;
+}
+
+.has-footer main {
+    margin-bottom: 59px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1071;
+    width: 100vw;
+    max-width: 840px;
+    background: white !important;
+    padding: 5px;
+    border-top: 1px solid #ced4da;
+    border-left: 1px solid #ced4da;
+    border-right: 1px solid #ced4da;
 }
 
 a,
@@ -67,8 +93,10 @@ a,
     top: 63px;
     left: 0;
     background: #fff;
-    z-index: 999;
+    z-index: 1071;
     border-bottom: 1px solid #ced4da;
+    border-left: 1px solid #ced4da;
+    border-right: 1px solid #ced4da;
 }
 
 #secondary-nav a {
@@ -87,9 +115,15 @@ a,
     font-size: 26px;
 }
 
-#secondary-nav a.active-item {
+#secondary-nav a.active-item,
+.dropdown-item.item-active,
+.dropdown-item:active {
     background: #965e37 !important;
     color: #fff !important;
+}
+
+.dropdown-item.item-active {
+    pointer-events: none;
 }
 
 #secondary-nav a.active-item:hover {
@@ -106,9 +140,12 @@ a,
 
 #main-nav {
     width: 100vw;
-    z-index: 999;
+    z-index: 1071;
     border-bottom: 1px solid #ced4da;
+    border-left: 1px solid #ced4da;
+    border-right: 1px solid #ced4da;
     padding: 2px 1rem !important;
+    background: #fff !important;
 }
 
 #right-nav a {
@@ -214,10 +251,6 @@ a,
     border-radius: 50%;
 }
 
-footer {
-    margin-bottom: 70px;
-}
-
 #datetimepicker .ui-datepicker {
     margin: 0 auto;
     width: 100%;
@@ -268,12 +301,19 @@ footer {
     z-index: 99999;
 }
 
+.modal-open #main-nav,
+.modal-open #secondary-nav,
+.modal-open footer {
+    z-index: 999 !important;
+}
+
 @media screen and (min-width: 841px) {
 
     #side-nav,
     #main-nav,
     #secondary-nav,
-    .msg-bottom {
+    .msg-bottom,
+    footer {
         right: calc((100vw - 840px) / 2) !important;
         left: auto !important;
     }
@@ -285,17 +325,21 @@ footer {
 }
 
 @media screen and (max-width: 575px) {
-    .home-page .card {
+    .home-page .card,
+    .results-page .card {
         text-align: center !important;
     }
 
     .home-page .card-img-right,
-    .home-page .card-body>* {
+    .results-page .card-img-right,
+    .home-page .card-body>*,
+    .results-page .card-body>* {
         margin-left: auto !important;
         margin-right: auto !important;
     }
 
-    .home-page .card-img-right {
+    .home-page .card-img-right,
+    .results-page .card-img-right {
         margin-top: 15px;
     }
 }
