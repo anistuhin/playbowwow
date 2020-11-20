@@ -6,8 +6,12 @@ main {
     margin: 0 auto;
     position: relative;
     background: rgba(0, 0, 0, .01);
-    padding-top: 64px;
+    padding-top: 125px;
     color: #965e37;
+}
+
+.home-page .card-body>h4 {
+    font-weight: bold;
 }
 
 footer a {
@@ -15,7 +19,8 @@ footer a {
 }
 
 a,
-.text-primary {
+.text-primary,
+.modal-title {
     color: #965e37 !important;
 }
 
@@ -52,6 +57,45 @@ a,
     border-color: #965e37 !important;
 }
 
+#secondary-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    max-width: 840px;
+    height: 60px;
+    position: fixed;
+    top: 63px;
+    left: 0;
+    background: #fff;
+    z-index: 999;
+    border-bottom: 1px solid #ced4da;
+}
+
+#secondary-nav a {
+    min-width: calc((100% - 6px) / 4);
+    max-width: calc((100% - 6px) / 4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    /*text-transform: uppercase;*/
+    font-weight: bold;
+}
+
+#secondary-nav a>svg {
+    font-size: 26px;
+}
+
+#secondary-nav a.active-item {
+    background: #965e37 !important;
+    color: #fff !important;
+}
+
+#secondary-nav a.active-item:hover {
+    text-decoration: none !important;
+}
+
 #side-nav,
 #main-nav {
     position: fixed;
@@ -62,8 +106,9 @@ a,
 
 #main-nav {
     width: 100vw;
-    z-index: 9999;
+    z-index: 999;
     border-bottom: 1px solid #ced4da;
+    padding: 2px 1rem !important;
 }
 
 #right-nav a {
@@ -208,7 +253,7 @@ footer {
 
 .dogtail {
     border-radius: 50%;
-    border: 5px solid #964921;
+    border: 5px solid #965e37;
     width: 85px;
     height: 85px;
     display: block;
@@ -227,6 +272,7 @@ footer {
 
     #side-nav,
     #main-nav,
+    #secondary-nav,
     .msg-bottom {
         right: calc((100vw - 840px) / 2) !important;
         left: auto !important;
@@ -236,6 +282,22 @@ footer {
         right: calc(((100vw - 840px) / 2) + 20px);
     }
 
+}
+
+@media screen and (max-width: 575px) {
+    .home-page .card {
+        text-align: center !important;
+    }
+
+    .home-page .card-img-right,
+    .home-page .card-body>* {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .home-page .card-img-right {
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-height: 450px) {

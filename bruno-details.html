@@ -14,16 +14,6 @@
 
 <body>
     <main>
-        <nav id="side-nav" class="sidenav bg-primary">
-            <span id="close-nav" class="closebtn">&times;</span>
-            <a href="index.html">Home</a>
-            <a href="profile.html">Profile</a>
-            <a href="inbox.html">Inbox</a>
-            <a href="filters.html">Search using filters</a>
-            <form class="form-inline bg-primary w-100">
-                <input class="form-control w-100 text-light bg-primary" type="search" placeholder="Search profiles" aria-label="Search">
-            </form>
-        </nav>
         <nav id="main-nav" class="navbar navbar-light bg-light justify-content-between">
             <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="Play Bow Wow Logo" height="48px"></a>
             <ul id="right-nav" class="navbar-nav flex-row justify-content-end">
@@ -37,13 +27,41 @@
                     </a>
                 </li>
                 <li class="nav-item ml-4">
-                    <a id="open-nav" href="#">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-justify align-baseline" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                    <a href="help.html">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-question-circle align-baseline" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
                         </svg>
                     </a>
                 </li>
             </ul>
+        </nav>
+        <nav id="secondary-nav">
+            <a href="index.html">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                </svg>
+                <span class="se-title">Home</span>
+            </a>
+            <a href="filters.html">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-filter" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                </svg>
+                <span class="se-title">Filter</span>
+            </a>
+            <a href="inbox.html">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-inbox" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z" />
+                </svg>
+                <span class="se-title">Inbox</span>
+            </a>
+            <a href="profile.html">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                </svg>
+                <span class="se-title">Profile</span>
+            </a>
         </nav>
         <div id="main">
             <div class="container-fluid">
@@ -54,74 +72,12 @@
                                 <img src="assets/img/bruno.jpg" alt="English Bulldog" class="img-thumbnail">
                                 <div class="mt-2 mb-4">
                                     <a href="#" data-toggle="modal" data-target="#galleryModal"><u><b>View gallery</b></u></a>
-                                    <div class="modal" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="galleryModalLabel">Full Gallery</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="row">
-                                                        <div class="col-md-12">
-                                                            <div id="mdb-lightbox-ui"></div>
-                                                            <div class="mdb-lightbox">
-                                                                <figure class="col-12">
-                                                                    <img src="assets/img/bella.jpg" alt="Basset Hound" class="img-thumbnail w-100">
-                                                                </figure>
-                                                                <figure class="col-12">
-                                                                    <img src="assets/img/bella1.jpg" alt="Basset Hound" class="img-thumbnail w-100">
-                                                                </figure>
-                                                                <figure class="col-12">
-                                                                    <img src="assets/img/bella2.jpg" alt="Basset Hound" class="img-thumbnail w-100">
-                                                                </figure>
-                                                                <figure class="col-12">
-                                                                    <img src="assets/img/bella3.jpg" alt="Basset Hound" class="img-thumbnail w-100">
-                                                                </figure>
-                                                                <figure class="col-12">
-                                                                    <img src="assets/img/bella4.jpg" alt="Basset Hound" class="img-thumbnail w-100">
-                                                                </figure>
-                                                                <figure class="col-12">
-                                                                    <img src="assets/img/bella5.jpg" alt="Basset Hound" class="img-thumbnail w-100">
-                                                                </figure>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-sm-7">
                                 <h2 class="text-primary"><b>Bruno</b></h2>
                                 <h4 class="my-3"> 5 years, Male, Medium <br>English Bulldog<br> miles </h4>
                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Vaccination Report</button>
-                                <!-- Modal -->
-                                <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Vaccine Report for Bruno</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <img src="assets/img/vaccine.jpg" height="450px" width="450px">
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="scheduler.html" class="dogtail"><img src="assets/img/dogtail.png" alt="dogtail" width="75" height="75"></a>
                             </div>
                         </div>
                         <div class="row mt-4">
@@ -132,17 +88,70 @@
                         </div>
                     </div>
                 </div>
-                <footer class="mt-5 text-muted text-center text-small">
-                    <p class="mb-1">© 2020 Play Bow Wow</p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#">Privacy</a></li>
-                        <li class="list-inline-item"><a href="#">Terms</a></li>
-                        <li class="list-inline-item"><a href="#">How to tour</a></li>
-                    </ul>
-                </footer>
             </div>
         </div>
     </main>
+    <div class="modal" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="galleryModalLabel"><b>Full Gallery</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="mdb-lightbox-ui"></div>
+                            <div class="mdb-lightbox">
+                                <figure class="col-12">
+                                    <img src="assets/img/bruno.jpg" class="img-thumbnail w-100">
+                                </figure>
+                                <figure class="col-12">
+                                    <img src="assets/img/bruno1.jpg" class="img-thumbnail w-100">
+                                </figure>
+                                <figure class="col-12">
+                                    <img src="assets/img/bruno2.jpg" class="img-thumbnail w-100">
+                                </figure>
+                                <figure class="col-12">
+                                    <img src="assets/img/bruno3.jpg" class="img-thumbnail w-100">
+                                </figure>
+                                <figure class="col-12">
+                                    <img src="assets/img/bruno4.jpg" class="img-thumbnail w-100">
+                                </figure>
+                                <figure class="col-12">
+                                    <img src="assets/img/bruno5.jpg" class="img-thumbnail w-100">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><b>Vaccine Report for Bruno</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/img/vaccine.jpg" height="450px" width="450px">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="scheduler.html" class="dogtail"><img src="assets/img/dogtail.png" alt="dogtail" width="75" height="75"></a>
     <script src="assets/jquery-3.5.1.min.js"></script>
     <script src="assets/bootstrap-4.4.1/bootstrap.min.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
