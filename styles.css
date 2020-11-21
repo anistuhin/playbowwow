@@ -296,7 +296,7 @@ a,
     display: block;
     overflow: hidden;
     position: fixed;
-    bottom: 70px;
+    bottom: 20px;
     right: 20px;
     z-index: 99;
     -webkit-animation: heightlight 3s infinite ease-in;
