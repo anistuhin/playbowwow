@@ -79,40 +79,36 @@
                 </div>
             </div>
             <ul class="list-inline text-center mt-4">
-                <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">Submit</button>
-                <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="staticBackdropLabel"><b>Congrats!</b></h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                A playdate request has been sent sucessfully.
-                            </div>
-                            <div class="modal-footer">
-                                <li class="list-inline-item"><button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Undo</button></li>
-                                <li class="list-inline-item"><a href="inbox-details.html" class="btn btn-primary" role="button" aria-pressed="true">Start Chatting</a></li>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <li class="list-inline-item"><a href="inbox.html" class="btn btn-secondary" role="button" aria-pressed="true">Skip to chat</a></li>
             </ul>
-            <footer class="mt-5 text-muted text-center text-small">
-                <p class="mb-1">© 2020 Play Bow Wow</p>
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#">Privacy</a></li>
-                    <li class="list-inline-item"><a href="#">Terms</a></li>
-                    <li class="list-inline-item"><a href="#">How to tour</a></li>
-                </ul>
-            </footer>
         </div>
     </main>
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel"><b>Congrats!</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div style="color: #965e37;" class="modal-body text-center">
+                    <svg width="200px" height="200px" viewBox="0 0 16 16" class="bi bi-patch-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10.273 2.513l-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"></path>
+                        <path fill-rule="evenodd" d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"></path>
+                    </svg>
+                    <div class="text-center mt-4">
+                        A playdate request has been sent sucessfully.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <li class="list-inline-item"><button id="cancel-schedule" type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Undo</button></li>
+                    <li class="list-inline-item"><a href="inbox-details.html" class="btn btn-primary" role="button" aria-pressed="true">Start Chatting</a></li>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="assets/jquery-3.5.1.min.js"></script>
     <script src="assets/jquery-ui/jquery-ui.min.js"></script>
     <script src="assets/bootstrap-4.4.1/bootstrap.min.js"></script>

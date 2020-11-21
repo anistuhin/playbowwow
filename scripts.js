@@ -34,6 +34,11 @@
         if ($('[data-toggle="tooltip"]').length) {
             $('[data-toggle="tooltip"]').tooltip();
         }
+
+        $(document).on('click', '#cancel-schedule', function(){
+            $('.undo-playdate-alert').remove();
+            $('main').after('<div class="undo-playdate-alert alert alert-primary alert-dismissible fade show mb-0" role="alert">The request has been unsent successfully.<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
+        });
     });
 
 
