@@ -31,9 +31,12 @@
                 source: places
             });
         }
+        if ($('[data-toggle="tooltip"]').length) {
+            $('[data-toggle="tooltip"]').tooltip();
+        }
     });
 
-    
+
     $(document).on('click', '#open-nav', function(e) {
         e.preventDefault();
         $('.sidenav').css('width', '320px')
