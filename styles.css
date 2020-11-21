@@ -126,8 +126,12 @@ a,
     pointer-events: none;
 }
 
-#secondary-nav a.active-item:hover {
+#secondary-nav a:hover {
     text-decoration: none !important;
+}
+
+#secondary-nav a:not(.active-item):hover {
+    background: rgba(0, 0, 0, .05) !important;
 }
 
 #side-nav,
@@ -139,7 +143,7 @@ a,
 }
 
 #main-nav {
-    width: 100vw;
+    width: 100%;
     z-index: 1071;
     border-bottom: 1px solid #ced4da;
     border-left: 1px solid #ced4da;
@@ -314,7 +318,7 @@ a,
     #secondary-nav,
     .msg-bottom,
     footer {
-        right: calc((100vw - 840px) / 2) !important;
+        right: calc((100% - 840px) / 2) !important;
         left: auto !important;
     }
 
