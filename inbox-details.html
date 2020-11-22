@@ -174,7 +174,7 @@
             <img src="assets/img/tail.png" class="jiggly-tail" alt="tail" width="49" height="49">
         </a>
         <div class="input-group">
-            <div class="input-group-append">
+            <div class="input-group-append" data-toggle="modal" data-target="#galleryModal">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-card-image" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 0 0-.5.5v9c0 .013 0 .027.002.04V12l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094L15 9.499V3.5a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm4.502 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
                 </svg>
@@ -187,6 +187,52 @@
             </div>
         </div>
     </footer>
+    <div class="modal" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header flex-column">
+                    <div class="d-flex w-100">
+                        <h5 class="modal-title" id="galleryModalLabel"><b>Select from gallery</b></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <p class="my-0">Emulating image upload, select one</p>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="mdb-lightbox-ui"></div>
+                            <div class="mdb-lightbox row">
+                                <figure class="col-12 col-sm-6">
+                                    <img src="assets/img/tucker.jpg" class="img-thumbnail w-100">
+                                </figure>
+                                <figure class="col-12 col-sm-6">
+                                    <img src="assets/img/tucker1.jpg" class="img-thumbnail w-100">
+                                </figure>
+                                <figure class="col-12 col-sm-6">
+                                    <img src="assets/img/tucker2.jpg" class="img-thumbnail w-100">
+                                </figure>
+                                <figure class="col-12 col-sm-6">
+                                    <img src="assets/img/tucker3.jpg" class="img-thumbnail w-100">
+                                </figure>
+                                <figure class="col-12 col-sm-6">
+                                    <img src="assets/img/tucker4.jpg" class="img-thumbnail w-100">
+                                </figure>
+                                <figure class="col-12 col-sm-6">
+                                    <img src="assets/img/tucker5.jpg" class="img-thumbnail w-100">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="send-image" type="button" class="btn btn-primary" data-dismiss="modal">Send</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="assets/jquery-3.5.1.min.js"></script>
     <script src="assets/bootstrap-4.4.1/bootstrap.min.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
