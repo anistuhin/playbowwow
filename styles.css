@@ -245,6 +245,40 @@ a,
     position: relative;
 }
 
+.notifications[data-id="0"] .notifications-badge {
+    display: none;
+}
+
+.notifications[data-id="0"] .notifications-badge::before {
+    content: '0';
+}
+
+.notifications[data-id="1"] .notifications-badge::before {
+    content: '1';
+}
+
+.notifications[data-id="2"] .notifications-badge::before {
+    content: '2';
+}
+
+.notifications[data-id="3"] .notifications-badge::before {
+    content: '3';
+}
+
+.card:not([data-status="accepted"]) .data-status-accept,
+.card:not([data-status="rejected"]) .data-status-reject,
+.card:not([data-status="na"]) button {
+    display: none;
+}
+
+.notifications-page .card.btn {
+    cursor: default !important;
+}
+
+.undo-status {
+    cursor: pointer;
+}
+
 .notifications-badge {
     position: absolute;
     top: -1px;
@@ -650,20 +684,24 @@ a,
 @media screen and (max-width: 575px) {
 
     .home-page .card,
-    .results-page .card {
+    .results-page .card,
+    .notifications-page .card {
         text-align: center !important;
     }
 
     .home-page .card-img-right,
     .results-page .card-img-right,
+    .notifications-page .card-img-right,
     .home-page .card-body>*,
-    .results-page .card-body>* {
+    .results-page .card-body>*,
+    .notifications-page .card-body>* {
         margin-left: auto !important;
         margin-right: auto !important;
     }
 
     .home-page .card-img-right,
-    .results-page .card-img-right {
+    .results-page .card-img-right,
+    .notifications-page .card-img-right {
         margin-top: 15px;
     }
 }
