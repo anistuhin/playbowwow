@@ -866,6 +866,14 @@ a,
     height: 30px;
 }
 
+.chat-gallery figure {
+    cursor: pointer;
+}
+
+.chat-gallery figure.selected-item img {
+    box-shadow: 0 0 0 .3rem rgba(150, 94, 55, .45) !important;
+}
+
 /* FAQ styles for help page */
 .accordion-section .panel-default>.panel-heading {
     border: 0;

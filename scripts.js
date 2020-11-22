@@ -149,5 +149,76 @@
             sessionStorage.clear();
             location.reload();
         });
+
+        $(document).on('click', '#send-message', function() {
+            if ($('#chat-input').val().trim() != '') {
+                var text = $('#chat-input').val().trim();
+                $('#chat-input').val('');
+                $('.msg-page').append(textMsg(text));
+            }
+        });
+
+        $(document).on('click', '#send-image', function() {
+            if ($('.chat-gallery figure.selected-item').length) {
+                var img = $('.chat-gallery figure.selected-item img').attr('src').trim();
+                $('.msg-page').append(imageMsg(img));
+            }            
+        });
+
+        $(document).on('click', '.chat-gallery figure', function() {
+            $('.chat-gallery figure.selected-item').removeClass('selected-item');
+            $(this).addClass('selected-item');
+        });
     });
+
+    function textMsg(txt) {
+        return('' +
+            '<div class="outgoing-chats">' +
+                '<div class="outgoing-chats-img">' +
+                    '<img src="assets/img/thumbnail.jpeg">' +
+                '</div>' +
+                '<div class="outgoing-msg">' +
+                    '<div class="outgoing-chats-msg">' +
+                        '<p>' + txt + '</p>' +
+                        '<span class="time">' + getDateTimeNow() + '</span>' +
+                    '</div>' +
+                '</div>' +
+            '</div>' +
+        '');
+    }
+
+    function imageMsg(img) {
+        return('' +
+            '<div class="outgoing-chats">' +
+                '<div class="outgoing-chats-img">' +
+                    '<img src="assets/img/thumbnail.jpeg">' +
+                '</div>' +
+                '<div class="outgoing-msg">' +
+                    '<div class="outgoing-chats-msg">' +
+                        '<img src="' + img + '" class="img-thumbnail msg-img">' +
+                        '<span class="time">' + getDateTimeNow() + '</span>' +
+                    '</div>' +
+                '</div>' +
+            '</div>' +
+        '');
+    }
+
+    function getDateTimeNow() {
+        var monthName = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        var d = new Date(),
+            hours = d.getHours(),
+            minutes = d.getMinutes(),
+            ampm = hours >= 12 ? 'pm' : 'am',
+            month = '' + d.getMonth(),
+            day = '' + d.getDate();
+        hours = hours % 12;
+        hours = hours ? hours : 12; // the hour '0' should be '12'
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        var time = hours + ':' + minutes + ampm;
+        if (month.length < 2)
+            month = '0' + month;
+        if (day.length < 2)
+            day = '0' + day;
+        return(time + ' | ' + monthName[month] + ' ' + day);
+    }
 })(window.jQuery);
