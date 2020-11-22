@@ -225,7 +225,8 @@ a,
     background-image: none !important;
 }
 
-.slider-track-low, .slider-track-high {
+.slider-track-low,
+.slider-track-high {
     background: white !important;
     border: 1px solid #ced4da !important;
 }
@@ -804,46 +805,65 @@ a,
     float: right;
 }
 
-.msg-bottom {
+.msg-footer {
+    height: 60px;
+}
+
+.msg-dogtail {
+    display: block;
     position: relative;
-    height: 10%;
-    background-color: #965e37;
+    min-width: 49px;
+    max-width: 49px;
+    min-height: 49px;
+    max-height: 49px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #965e37;
+    margin-right: 10px;
+}
+
+.msg-dogtail img {
+    width: 100% !important;
 }
 
 .input-group {
-    float: right;
-    padding: 11px;
-    background-color: #fff;
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, .05);
+    border-radius: 25px;
+    padding: 0 5px;
+    justify-content: space-between;
+    align-items: center;
+    color: #965e37 !important;
 }
 
-
-.from-control {
-    border: relative;
-    border-radius: 20px !important;
+.input-group input {
+    background: transparent !important;
+    border: 0 !important;
+    color: #965e37 !important;
+    margin: 0 10px !important;
+    padding: 0 !important;
+    font-size: 18px !important;
+    line-height: 40px !important;
 }
 
-.input-group.fa {
-    color: #965e37;
-    float: right;
-}
-
-.bottom-icons {
-    float: left;
-    margin-top: 17px;
-    width: 20% !important;
-    margin-left: 22px;
-}
-
-.bottom-icons .fa {
-    color: #000000;
-    padding: 5px;
-
-}
-
-.from-control:focus {
-    border-color: none !important;
+.input-group input:focus {
     box-shadow: none !important;
-    border-radius: 40px !important;
+}
+
+.input-group-append {
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.input-group-append svg {
+    width: 30px;
+    height: 30px;
 }
 
 /* FAQ styles for help page */
@@ -878,3 +898,20 @@ a,
 }
 
 /*wintom*/
+
+.msg-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background: white;
+    height: 70px;
+    max-width: 840px;
+    border-top: 1px solid #ced4da;
+    border-left: 1px solid #ced4da;
+    border-right: 1px solid #ced4da;
+}
+
+.msg-img {
+    border-radius: 0 !important;
+}
