@@ -219,9 +219,15 @@ a,
 }
 
 .custom-bootstrap-slider .slider-selection {
-    background-color: #FFF !important;
+    background-color: #9B6641 !important;
     box-shadow: none !important;
     border: 1px solid #ced4da;
+    background-image: none !important;
+}
+
+.slider-track-low, .slider-track-high {
+    background: white !important;
+    border: 1px solid #ced4da !important;
 }
 
 .custom-bootstrap-slider .slider-handle,

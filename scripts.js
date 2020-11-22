@@ -1,8 +1,14 @@
 (function($) {
     $(document).ready(function() {
-        if ($("#age").length && $("#distance").length) {
-            $("#age").slider({ 'tooltip': 'always' });
-            $("#distance").slider({ 'tooltip': 'always' });
+        if ($("#age").length) {
+            $("#age").slider({
+                tooltip: 'always'
+            });
+        }
+        if ($("#distance").length) {
+            $("#distance").slider({
+                tooltip: 'always'
+            });
         }
         if ($('#datetimepicker').length) {
             var dateToday = new Date();
@@ -35,23 +41,51 @@
             $('[data-toggle="tooltip"]').tooltip();
         }
 
-        $(document).on('click', '#cancel-schedule', function(){
+        if ($('.filters-page').length && sessionStorage.getItem("searchedData") !== null) {
+            var data = JSON.parse(sessionStorage.getItem("searchedData"));
+            for (var key in data) {
+                if (data.hasOwnProperty(key)) {
+                    switch (key) {
+                        case 'male':
+                            $('#' + key).prop('checked', data[key]);
+                            break;
+                        case 'female':
+                            $('#' + key).prop('checked', data[key]);
+                            break;
+                        case 'age':
+                            $('#' + key).slider('setValue', data[key]);
+                            break;
+                        case 'distance':
+                            $('#' + key).slider('setValue', data[key]);
+                            break;
+                        case 'breed':
+                            $('#' + key).val(data[key]);
+                            break;
+                        case 'size':
+                            $('#' + key).val(data[key]);
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+        }
+
+        $(document).on('click', '#cancel-schedule', function() {
             $('.undo-playdate-alert').remove();
             $('main').after('<div class="undo-playdate-alert alert alert-primary alert-dismissible fade show mb-0" role="alert">The request has been unsent successfully.<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
         });
-    });
 
-
-    $(document).on('click', '#open-nav', function(e) {
-        e.preventDefault();
-        $('.sidenav').css('width', '320px')
-    });
-    $(document).on('click', '#close-nav', function() {
-        $('.sidenav').css('width', '')
+        $(document).on('click', '#search-btn', function() {
+            var data = {
+                male: $('#male').prop('checked'),
+                female: $('#female').prop('checked'),
+                age: $("#age").slider('getValue'),
+                distance: $("#distance").slider('getValue'),
+                breed: $("#breed").val(),
+                size: $("#size").val()
+            };
+            sessionStorage.setItem("searchedData", JSON.stringify(data));
+        });
     });
 })(window.jQuery);
-
-/*// MDB Lightbox Init
-        $(function () {
-        $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-        });  */
