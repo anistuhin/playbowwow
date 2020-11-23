@@ -376,6 +376,10 @@ a,
     background-repeat: no-repeat;
     padding-right: 50px !important;
 }
+ .help-page .accordion-section {
+    height: calc(100vh - 220px);
+    overflow-y: auto;
+ }
 
 @-webkit-keyframes fadeOut {
     0% {
