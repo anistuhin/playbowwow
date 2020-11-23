@@ -155,13 +155,27 @@
                 var text = $('#chat-input').val().trim();
                 $('#chat-input').val('');
                 $('.msg-page').append(textMsg(text));
+                $('#chat-input').focus();
+                scrollToBottom();
             }
         });
+
+        $(document).on('submit', '#msg-form', function(){
+            if ($('#chat-input').val().trim() != '') {
+                var text = $('#chat-input').val().trim();
+                $('#chat-input').val('');
+                $('.msg-page').append(textMsg(text));
+                $('#chat-input').focus();
+                scrollToBottom();
+            }
+            return false;
+        })
 
         $(document).on('click', '#send-image', function() {
             if ($('.chat-gallery figure.selected-item').length) {
                 var img = $('.chat-gallery figure.selected-item img').attr('src').trim();
                 $('.msg-page').append(imageMsg(img));
+                scrollToBottom();
             }            
         });
 
@@ -201,6 +215,14 @@
                 '</div>' +
             '</div>' +
         '');
+    }
+
+    function scrollToBottom() {
+        setTimeout(function() {
+            $('html, body').stop(true, false).animate({
+                scrollTop: document.body.scrollHeight
+            }, 500);
+        }, 100);
     }
 
     function getDateTimeNow() {
